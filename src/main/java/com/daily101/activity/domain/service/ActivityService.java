@@ -11,4 +11,6 @@ public interface ActivityService {
 
 	public abstract void ActivityInsert(Activity activity) throws NoSuchElementException;
 
+	public abstract List<Activity> ActivityDateList(String today, double userid) throws NoSuchElementException;
+
 }

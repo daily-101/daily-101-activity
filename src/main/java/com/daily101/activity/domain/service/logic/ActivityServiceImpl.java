@@ -28,4 +28,10 @@ public class ActivityServiceImpl implements ActivityService {
 		store.insert(activity);
 	}
 
+	@Override
+	public List<Activity> ActivityDateList(String today, double userid) throws NoSuchElementException {
+		// TODO Auto-generated method stub
+		return store.findDateAll(today,userid);
+	}
+
 }

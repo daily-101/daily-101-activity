@@ -33,8 +33,7 @@ public class ActivityJpo extends BaseTimeEntity{
 	
 	
 	@Builder
-	public ActivityJpo(int id,LocalDateTime date,double userId,int time,int calories,double price,double distance) {
-		super(date);
+	public ActivityJpo(int id,double userId,int time,int calories,double price,double distance) {
 		this.id=id;
 		this.userId=userId;
 		this.time=time;

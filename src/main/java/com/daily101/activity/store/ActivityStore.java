@@ -11,4 +11,6 @@ public interface ActivityStore {
 
 	public abstract void insert(Activity activity) throws NoSuchElementException;
 
+	public abstract List<Activity> findDateAll(String today, double userid) throws NoSuchElementException;
+
 }
