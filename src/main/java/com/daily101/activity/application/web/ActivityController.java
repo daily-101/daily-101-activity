@@ -40,7 +40,7 @@ public class ActivityController {
 		format1 = new SimpleDateFormat("yyyy-MM-dd");
 		String today =  (format1.format(date));
 		
-		System.out.println("날짜 조회 성공 "+today);
+		System.out.println("activity 날짜 조회 성공 "+today);
 		
 		return Activity.toDtoList(service.ActivityDateList(today,userid));
 	}

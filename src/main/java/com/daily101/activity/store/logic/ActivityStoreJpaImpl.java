@@ -41,7 +41,7 @@ public class ActivityStoreJpaImpl implements ActivityStore {
 
 	@Override
 	public List<Activity> findDateAll(String today, double userid) throws NoSuchElementException {
-		String query = "SELECT * FROM timeline WHERE DATE(date) = '"+today+"'"+"and user_id="+userid;
+		String query = "SELECT * FROM activity WHERE DATE(date) = '"+today+"'"+"and user_id="+userid;
 		List<ActivityJpo> activity = repocustom.findByQuery(query);
 		return ActivityJpo.toDomains(activity);
 	}
